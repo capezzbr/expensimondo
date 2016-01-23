@@ -37,6 +37,7 @@
 		0A859C581C53A0370071C8C0 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C441C53A0370071C8C0 /* KeychainService.swift */; };
 		0A859C5A1C53A0690071C8C0 /* MondoAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C591C53A0690071C8C0 /* MondoAuthenticator.swift */; };
 		8A75F8B31C53B709000392AB /* ExpensifyTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */; };
+		8A75F8B61C53B7AA000392AB /* ExpensifyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B51C53B7AA000392AB /* ExpensifyAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +79,8 @@
 		0A859C5B1C53A4770071C8C0 /* ExpensiMondo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExpensiMondo-Bridging-Header.h"; sourceTree = "<group>"; };
 		8A75F8B11C53B709000392AB /* ExpensifyTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpensifyTransaction.h; path = Models/ExpensifyTransaction.h; sourceTree = "<group>"; };
 		8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpensifyTransaction.m; path = Models/ExpensifyTransaction.m; sourceTree = "<group>"; };
+		8A75F8B41C53B7AA000392AB /* ExpensifyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpensifyAPI.h; sourceTree = "<group>"; };
+		8A75F8B51C53B7AA000392AB /* ExpensifyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpensifyAPI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +129,8 @@
 				0A859C241C53900B0071C8C0 /* Info.plist */,
 				0A859C131C53900B0071C8C0 /* ExpensiMondo.xcdatamodeld */,
 				0A859C0D1C53900B0071C8C0 /* Supporting Files */,
+				8A75F8B41C53B7AA000392AB /* ExpensifyAPI.h */,
+				8A75F8B51C53B7AA000392AB /* ExpensifyAPI.m */,
 			);
 			path = ExpensiMondo;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 				0A859C451C53A0370071C8C0 /* extensions.swift in Sources */,
 				0A859C471C53A0370071C8C0 /* OAuth2+iOS.swift in Sources */,
 				0A859C4C1C53A0370071C8C0 /* OAuth2CodeGrant.swift in Sources */,
+				8A75F8B61C53B7AA000392AB /* ExpensifyAPI.m in Sources */,
 				0A859C0F1C53900B0071C8C0 /* main.m in Sources */,
 				0A859C151C53900B0071C8C0 /* ExpensiMondo.xcdatamodeld in Sources */,
 				0A859C521C53A0370071C8C0 /* OAuth2Request.swift in Sources */,
