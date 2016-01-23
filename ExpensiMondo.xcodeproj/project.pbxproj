@@ -15,7 +15,6 @@
 		0A859C1E1C53900B0071C8C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A859C1C1C53900B0071C8C0 /* Main.storyboard */; };
 		0A859C201C53900B0071C8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A859C1F1C53900B0071C8C0 /* Assets.xcassets */; };
 		0A859C231C53900B0071C8C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A859C211C53900B0071C8C0 /* LaunchScreen.storyboard */; };
-		8A75F8AF1C53A836000392AB /* ExpensifyTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8AE1C53A836000392AB /* ExpensifyTransaction.m */; };
 		0A859C451C53A0370071C8C0 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C2E1C53A0370071C8C0 /* extensions.swift */; };
 		0A859C461C53A0370071C8C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A859C2F1C53A0370071C8C0 /* Info.plist */; };
 		0A859C471C53A0370071C8C0 /* OAuth2+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C311C53A0370071C8C0 /* OAuth2+iOS.swift */; };
@@ -37,7 +36,7 @@
 		0A859C571C53A0370071C8C0 /* KeychainQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C431C53A0370071C8C0 /* KeychainQuery.swift */; };
 		0A859C581C53A0370071C8C0 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C441C53A0370071C8C0 /* KeychainService.swift */; };
 		0A859C5A1C53A0690071C8C0 /* MondoAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C591C53A0690071C8C0 /* MondoAuthenticator.swift */; };
->>>>>>> Gilbert
+		8A75F8B31C53B709000392AB /* ExpensifyTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,8 +53,6 @@
 		0A859C1F1C53900B0071C8C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A859C221C53900B0071C8C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A859C241C53900B0071C8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A75F8AD1C53A836000392AB /* ExpensifyTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpensifyTransaction.h; path = Models/ExpensifyTransaction.h; sourceTree = "<group>"; };
-		8A75F8AE1C53A836000392AB /* ExpensifyTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpensifyTransaction.m; path = Models/ExpensifyTransaction.m; sourceTree = "<group>"; };
 		0A859C2E1C53A0370071C8C0 /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		0A859C2F1C53A0370071C8C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A859C311C53A0370071C8C0 /* OAuth2+iOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OAuth2+iOS.swift"; sourceTree = "<group>"; };
@@ -79,7 +76,8 @@
 		0A859C441C53A0370071C8C0 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		0A859C591C53A0690071C8C0 /* MondoAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondoAuthenticator.swift; sourceTree = "<group>"; };
 		0A859C5B1C53A4770071C8C0 /* ExpensiMondo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExpensiMondo-Bridging-Header.h"; sourceTree = "<group>"; };
->>>>>>> Gilbert
+		8A75F8B11C53B709000392AB /* ExpensifyTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpensifyTransaction.h; path = Models/ExpensifyTransaction.h; sourceTree = "<group>"; };
+		8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpensifyTransaction.m; path = Models/ExpensifyTransaction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +110,7 @@
 		0A859C0C1C53900B0071C8C0 /* ExpensiMondo */ = {
 			isa = PBXGroup;
 			children = (
-				8A75F8AC1C53A7E0000392AB /* Models */,
+				8A75F8B01C53B6ED000392AB /* Models */,
 				0A859C101C53900B0071C8C0 /* AppDelegate.h */,
 				0A859C111C53900B0071C8C0 /* AppDelegate.m */,
 				0A859C161C53900B0071C8C0 /* MasterViewController.h */,
@@ -140,13 +138,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		8A75F8AC1C53A7E0000392AB /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8A75F8AD1C53A836000392AB /* ExpensifyTransaction.h */,
-				8A75F8AE1C53A836000392AB /* ExpensifyTransaction.m */,
-			);
-			name = Models;
 		0A859C2D1C53A0370071C8C0 /* OAuth2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +181,15 @@
 				0A859C441C53A0370071C8C0 /* KeychainService.swift */,
 			);
 			path = SwiftKeychain;
->>>>>>> Gilbert
+			sourceTree = "<group>";
+		};
+		8A75F8B01C53B6ED000392AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A75F8B11C53B709000392AB /* ExpensifyTransaction.h */,
+				8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +265,7 @@
 			files = (
 				0A859C571C53A0370071C8C0 /* KeychainQuery.swift in Sources */,
 				0A859C4B1C53A0370071C8C0 /* OAuth2ClientCredentials.swift in Sources */,
+				8A75F8B31C53B709000392AB /* ExpensifyTransaction.m in Sources */,
 				0A859C4D1C53A0370071C8C0 /* OAuth2CodeGrantBasicAuth.swift in Sources */,
 				0A859C581C53A0370071C8C0 /* KeychainService.swift in Sources */,
 				0A859C531C53A0370071C8C0 /* ArchiveKey.swift in Sources */,
@@ -273,7 +273,6 @@
 				0A859C1B1C53900B0071C8C0 /* DetailViewController.m in Sources */,
 				0A859C551C53A0370071C8C0 /* Keychain.swift in Sources */,
 				0A859C181C53900B0071C8C0 /* MasterViewController.m in Sources */,
-				8A75F8AF1C53A836000392AB /* ExpensifyTransaction.m in Sources */,
 				0A859C561C53A0370071C8C0 /* KeychainItem.swift in Sources */,
 				0A859C491C53A0370071C8C0 /* OAuth2.swift in Sources */,
 				0A859C5A1C53A0690071C8C0 /* MondoAuthenticator.swift in Sources */,
