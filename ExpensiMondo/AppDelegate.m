@@ -35,7 +35,9 @@
                                                                            externalID:@"test"
                                                                               comment:@"comment"];
     
-    [[ExpensifyAPI sharedManager] createTransaction:transaction];
+    [[ExpensifyAPI sharedManager] createTransaction:transaction withCallback:^(NSError * _Nullable error) {
+        
+    }];
     
     UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
     MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;

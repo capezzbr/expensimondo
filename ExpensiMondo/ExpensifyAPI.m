@@ -31,7 +31,8 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
     return self;
 }
 
-- (void)createTransaction:(nonnull ExpensifyTransaction *)transaction {
+- (void)createTransaction:(nonnull ExpensifyTransaction *)transaction
+             withCallback:(nonnull void (^)(NSError * _Nullable error))callback {
     
     NSDictionary *requestJobDescription =
     @{
@@ -48,28 +49,6 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
                 ]
         }
     };
-    
-    
-//    -d 'requestJobDescription={
-//    "type": "create",
-//    "credentials": {
-//        "partnerUserID": "aa_expensimondo_gmail_com",
-//        "partnerUserSecret": "d22980dbaa229b6e7aeae4dbcc18b56bcb6a6327"
-//    },
-//    "inputSettings": {
-//        "type": "expenses",
-//        "employeeEmail": "expensimondo@gmail.com",
-//        "transactionList": [
-//                            {
-//                                "merchant": "My merchant",
-//                                "created": "2016-01-23",
-//                                "amount": 100,
-//                                "currency": "USD",
-//                                "externalID": "UniqueID",
-//                                "comment": "My comment"
-//                            }
-//                            ]
-//    }
   
     __weak ExpensifyAPI *this = self;
     
@@ -87,6 +66,7 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
         NSLog(@"Success %@", responseObject);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+
         NSLog(@"Error %@", error);
     }];
     
