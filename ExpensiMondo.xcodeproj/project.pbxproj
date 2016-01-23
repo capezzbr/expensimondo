@@ -39,10 +39,10 @@
 		0A859C231C53900B0071C8C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A859C211C53900B0071C8C0 /* LaunchScreen.storyboard */; };
 		0A859C5A1C53A0690071C8C0 /* MondoAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C591C53A0690071C8C0 /* MondoAuthenticator.swift */; };
 		0A859C5D1C53B2E10071C8C0 /* MondoTransactionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C5C1C53B2E10071C8C0 /* MondoTransactionFetcher.swift */; };
-		2CC3F76D07F997C165ED90CF /* libPods-ExpensiMondo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D34875F9A8C8D28D6BFA64 /* libPods-ExpensiMondo.a */; };
 		8A75F8B31C53B709000392AB /* ExpensifyTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */; };
 		8A75F8B61C53B7AA000392AB /* ExpensifyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B51C53B7AA000392AB /* ExpensifyAPI.m */; };
 		8A75F8B81C53B9F8000392AB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8A75F8B71C53B9F8000392AB /* Podfile */; };
+		8C6FD7E1D922B4D90529D097 /* Pods_ExpensiMondo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AC25A82DB3F919428D187E /* Pods_ExpensiMondo.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,13 +86,13 @@
 		0A859C591C53A0690071C8C0 /* MondoAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondoAuthenticator.swift; sourceTree = "<group>"; };
 		0A859C5B1C53A4770071C8C0 /* ExpensiMondo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExpensiMondo-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A859C5C1C53B2E10071C8C0 /* MondoTransactionFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondoTransactionFetcher.swift; sourceTree = "<group>"; };
+		84AC25A82DB3F919428D187E /* Pods_ExpensiMondo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExpensiMondo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A75F8B11C53B709000392AB /* ExpensifyTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpensifyTransaction.h; path = Models/ExpensifyTransaction.h; sourceTree = "<group>"; };
 		8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpensifyTransaction.m; path = Models/ExpensifyTransaction.m; sourceTree = "<group>"; };
 		8A75F8B41C53B7AA000392AB /* ExpensifyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpensifyAPI.h; sourceTree = "<group>"; };
 		8A75F8B51C53B7AA000392AB /* ExpensifyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpensifyAPI.m; sourceTree = "<group>"; };
 		8A75F8B71C53B9F8000392AB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B714D9ED950A7D99D722EC66 /* Pods-ExpensiMondo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpensiMondo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpensiMondo/Pods-ExpensiMondo.release.xcconfig"; sourceTree = "<group>"; };
-		C6D34875F9A8C8D28D6BFA64 /* libPods-ExpensiMondo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExpensiMondo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CC3F76D07F997C165ED90CF /* libPods-ExpensiMondo.a in Frameworks */,
+				8C6FD7E1D922B4D90529D097 /* Pods_ExpensiMondo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +209,7 @@
 		86E7363885EA2309835BFC6D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C6D34875F9A8C8D28D6BFA64 /* libPods-ExpensiMondo.a */,
+				84AC25A82DB3F919428D187E /* Pods_ExpensiMondo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -244,6 +244,7 @@
 				0A859C071C53900B0071C8C0 /* Frameworks */,
 				0A859C081C53900B0071C8C0 /* Resources */,
 				2C16FBF45C75AA87ED2C7E27 /* Copy Pods Resources */,
+				6CABE31EA5EEC6A93A726A70 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -331,6 +332,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6CABE31EA5EEC6A93A726A70 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExpensiMondo/Pods-ExpensiMondo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
