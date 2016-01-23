@@ -20,9 +20,9 @@ public class MondoAuthenticator : NSObject {
     override init() {
         let settings = ["client_id":"oauthclient_000094RpteIGEnsZRmJrtJ",
                         "client_secret":"UuoNeRGv470bs0sCnpdWB7OqpCdcXbumna8OrISugyCjutS6zUqEqJy72cyO8hgwXkg+utcfBBdnFn6HAHde",
+                        "token_uri":"https://api.getmondo.co.uk/oauth2/token",
                         "authorize_uri":"https://auth.getmondo.co.uk",
                         "redirect_uris": ["expensimondo://oauth/callback"],
-                        "state":"alsudfqoinertucilnadilnu",
                         "response_type":"code"]
         
         self.oath2 = OAuth2CodeGrant(settings: settings)

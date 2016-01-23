@@ -11,6 +11,7 @@
 
 @interface ExpensifyAPI : NSObject
 
++ (nonnull id)sharedManager;
 - (void)createTransaction:(nonnull ExpensifyTransaction *)transaction;
 
 @end
