@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6C017E0555A036F9F3F0D081915BD36E45A11867",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6C017E0555A036F9F3F0D081915BD36E45A11867" : 0,
+    "F68FDBFBDD5D68F6EA2D856ACA86FD89B666E3CE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "270B58B4-EC74-4FBF-8F38-E17D0A2951A7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6C017E0555A036F9F3F0D081915BD36E45A11867" : "ExpensiMondo\/",
+    "F68FDBFBDD5D68F6EA2D856ACA86FD89B666E3CE" : "..\/refme\/refme-ios"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ExpensiMondo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ExpensiMondo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/capezzbr\/expensimondo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6C017E0555A036F9F3F0D081915BD36E45A11867"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ReferenceME\/refme-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F68FDBFBDD5D68F6EA2D856ACA86FD89B666E3CE"
+    }
+  ]
+}
