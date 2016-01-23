@@ -89,70 +89,6 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ExpensiMondo/MondoAuthenticator.swift"
-            timestampString = "475247781.041287"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "login(_:callback:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ExpensiMondo/MondoAuthenticator.swift"
-            timestampString = "475247781.041287"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "login(_:callback:)"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ExpensiMondo.MondoAuthenticator.(login (ExpensiMondo.MondoAuthenticator) -&gt; (__ObjC.UIViewController, callback : (Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "ExpensiMondo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilbertjolly/Documents/ExpensiMondo/ExpensiMondo/MondoAuthenticator.swift"
-                  timestampString = "475248259.410861"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "19">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "ExpensiMondo.MondoAuthenticator.(login (ExpensiMondo.MondoAuthenticator) -&gt; (__ObjC.UIViewController, callback : (Swift.Optional&lt;__ObjC.NSError&gt;) -&gt; ()) -&gt; ()).(closure #1).(closure #1)"
-                  moduleName = "ExpensiMondo"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilbertjolly/Documents/ExpensiMondo/ExpensiMondo/MondoAuthenticator.swift"
-                  timestampString = "475248259.411014"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "../../refme/refme-ios/App/ThirdParty/OAuth2/OAuth2CodeGrant.swift"
             timestampString = "475247917.079776"
             startingColumnNumber = "9223372036854775807"
@@ -160,22 +96,6 @@
             startingLineNumber = "202"
             endingLineNumber = "202"
             landmarkName = "exchangeCodeForToken(_:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ExpensiMondo/MondoAuthenticator.swift"
-            timestampString = "475247928.19123"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "login(_:callback:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

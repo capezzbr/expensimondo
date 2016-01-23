@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-public typealias LoginCallback = (NSError?) -> Void
+public typealias LoginCallback = (error: NSError?) -> Void
 
 
 public class MondoAuthenticator : NSObject {
@@ -33,6 +33,7 @@ public class MondoAuthenticator : NSObject {
     
     
     public func login(vc: UIViewController, callback: LoginCallback){
+        
         self.callback = callback
         
         oath2.onAuthorize =  {
@@ -43,7 +44,7 @@ public class MondoAuthenticator : NSObject {
         oath2.onFailure = {
             error in
             if let error = error{
-                self.callback(error)
+                self.callback(error: error)
             }
         }
         let webVC = oath2.authorizeEmbeddedFrom(vc, params: [:])

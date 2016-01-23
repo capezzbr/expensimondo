@@ -69,6 +69,14 @@
 		0A211E9E1C53BAF40028CD2C /* KeychainItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
 		0A211E9F1C53BAF40028CD2C /* KeychainQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainQuery.swift; sourceTree = "<group>"; };
 		0A211EA01C53BAF40028CD2C /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		2CC3F76D07F997C165ED90CF /* libPods-ExpensiMondo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D34875F9A8C8D28D6BFA64 /* libPods-ExpensiMondo.a */; };
+		8A75F8B31C53B709000392AB /* ExpensifyTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */; };
+		8A75F8B61C53B7AA000392AB /* ExpensifyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B51C53B7AA000392AB /* ExpensifyAPI.m */; };
+		8A75F8B81C53B9F8000392AB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8A75F8B71C53B9F8000392AB /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0280F9589AC587584956848E /* Pods-ExpensiMondo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpensiMondo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExpensiMondo/Pods-ExpensiMondo.debug.xcconfig"; sourceTree = "<group>"; };
 		0A859C0A1C53900B0071C8C0 /* ExpensiMondo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpensiMondo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A859C0E1C53900B0071C8C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A859C101C53900B0071C8C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,6 +92,7 @@
 		0A859C241C53900B0071C8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A859C591C53A0690071C8C0 /* MondoAuthenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondoAuthenticator.swift; sourceTree = "<group>"; };
 		0A859C5B1C53A4770071C8C0 /* ExpensiMondo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExpensiMondo-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A859C5C1C53B2E10071C8C0 /* MondoTransactionFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondoTransactionFetcher.swift; sourceTree = "<group>"; };
 		8A75F8B11C53B709000392AB /* ExpensifyTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpensifyTransaction.h; path = Models/ExpensifyTransaction.h; sourceTree = "<group>"; };
 		8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpensifyTransaction.m; path = Models/ExpensifyTransaction.m; sourceTree = "<group>"; };
 		8A75F8B41C53B7AA000392AB /* ExpensifyAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpensifyAPI.h; sourceTree = "<group>"; };
@@ -334,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A211EA21C53BAF40028CD2C /* Info.plist in Resources */,
 				8A75F8B81C53B9F8000392AB /* Podfile in Resources */,
 				0A859C461C53A0370071C8C0 /* Info.plist in Resources */,
 				0A859C231C53900B0071C8C0 /* LaunchScreen.storyboard in Resources */,
@@ -397,6 +407,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A211EB31C53BAF40028CD2C /* KeychainQuery.swift in Sources */,
+				0A211EA81C53BAF40028CD2C /* OAuth2CodeGrant.swift in Sources */,
+				0A211EA91C53BAF40028CD2C /* OAuth2CodeGrantBasicAuth.swift in Sources */,
+				0A859C5D1C53B2E10071C8C0 /* MondoTransactionFetcher.swift in Sources */,
 				0A859C571C53A0370071C8C0 /* KeychainQuery.swift in Sources */,
 				0A859C4B1C53A0370071C8C0 /* OAuth2ClientCredentials.swift in Sources */,
 				8A75F8B31C53B709000392AB /* ExpensifyTransaction.m in Sources */,
@@ -423,6 +437,11 @@
 				0A211EAB1C53BAF40028CD2C /* OAuth2DynReg.swift in Sources */,
 				0A859C5A1C53A0690071C8C0 /* MondoAuthenticator.swift in Sources */,
 				0A859C121C53900B0071C8C0 /* AppDelegate.m in Sources */,
+				0A211EB01C53BAF40028CD2C /* GenericKey.swift in Sources */,
+				0A211EAE1C53BAF40028CD2C /* OAuth2Request.swift in Sources */,
+				0A211EAA1C53BAF40028CD2C /* OAuth2CodeGrantFacebook.swift in Sources */,
+				0A211EA61C53BAF40028CD2C /* OAuth2Base.swift in Sources */,
+				0A211EAD1C53BAF40028CD2C /* OAuth2PasswordGrant.swift in Sources */,
 				0A859C511C53A0370071C8C0 /* OAuth2PasswordGrant.swift in Sources */,
 				0A859C4F1C53A0370071C8C0 /* OAuth2DynReg.swift in Sources */,
 				0A859C451C53A0370071C8C0 /* extensions.swift in Sources */,
