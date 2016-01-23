@@ -1,9 +1,10 @@
 ExpensiMondo.xcodeproj/project.xcworkspace/xcuserdata/
 ExpensiMondo.xcodeproj/xcuserdata/*.xcuserdatad/
 
-Credentials.json
 ExpensiMondo.xcworkspace/xcuserdata/*
 
 Pods/Pods.xcodeproj/
 Pods/Pods.xcodeproj/*
 
+Credentials.json
+Configuration.json

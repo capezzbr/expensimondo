@@ -11,6 +11,13 @@
 
 static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration-Server/ExpensifyIntegrations";
 
+@interface ExpensifyAPI ()
+
+@property (nonnull, nonatomic, retain) NSString *partnerUserID;
+@property (nonnull, nonatomic, retain) NSString *partnerUserSecret;
+
+@end
+
 @implementation ExpensifyAPI
 
 #pragma mark Singleton Methods
@@ -26,12 +33,12 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
 
 - (id)init {
     if (self = [super init]) {
+        [self loadConfiguration];
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
         manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     }
     return self;
 }
-
 
 - (void)createTransaction:(nonnull ExpensifyTransaction *)transaction
              withCallback:(nonnull void (^)(NSError * _Nullable error))callback {
@@ -46,13 +53,13 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
     for (ExpensifyTransaction *transaction in transactions) {
         [transactionsArray addObject:[transaction toDictionary]];
     }
-    
+
     NSDictionary *requestJobDescription =
     @{
         @"type": @"create",
         @"credentials": @{
-                @"partnerUserID": @"",
-                @"partnerUserSecret": @""
+                @"partnerUserID": self.partnerUserID,
+                @"partnerUserSecret": self.partnerUserSecret
         },
         @"inputSettings": @{
                 @"type": @"expenses",
@@ -80,7 +87,7 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
     }];
 }
 
--(NSString *)jsonFromDictionary:(NSDictionary *)dictionary {
+- (NSString *)jsonFromDictionary:(NSDictionary *)dictionary {
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:0 error:&error];
     if (!jsonData) {
@@ -88,6 +95,36 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
         return @"{}";
     }
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+}
+
+- (nonnull NSDictionary *)dictionaryFromJson:(NSString *)json {
+    NSError *error;
+    NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:[json dataUsingEncoding:NSUTF8StringEncoding]
+                                                               options:kNilOptions
+                                                                 error:&error];
+    if (!dictionary) {
+        NSLog(@"Unable to deserialise the dictionary, error %@", error);
+        return @{};
+    }
+    
+    return dictionary;
+}
+
+- (void)loadConfiguration {
+    NSError *error;
+    NSString *filename = [[NSBundle mainBundle] pathForResource:@"Configuration" ofType:@".json"];
+    NSString *fileContent = [NSString stringWithContentsOfFile:filename encoding:NSUTF8StringEncoding error:&error];
+    if (!fileContent) {
+        @throw([NSException exceptionWithName:@"FileNotFound"
+                                       reason:@"You need to create a config file with the credentials."
+                                     userInfo:nil]);
+    }
+    
+    NSDictionary *config = [self dictionaryFromJson:fileContent];
+    NSDictionary *expensifyConfig = config[ @"expensify" ];
+    
+    self.partnerUserID = expensifyConfig[ @"partnerUserID" ];
+    self.partnerUserSecret = expensifyConfig[ @"partnerUserSecret" ];
 }
 
 @end

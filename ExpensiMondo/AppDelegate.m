@@ -36,7 +36,7 @@
                                                                               comment:@"comment"];
     
     [[ExpensifyAPI sharedManager] createTransaction:transaction withCallback:^(NSError * _Nullable error) {
-        
+        NSLog(@"Transaction created correctly? %@", (error ? @"NO" : @"YES"));
     }];
     
     UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
