@@ -28,5 +28,24 @@
     return transaction;
 }
 
+- (NSDictionary *)toDictionary {
+    
+    NSMutableDictionary *dictionary = [NSMutableDictionary new];
+    [dictionary setValue:self.merchant forKey:@"merchant"];
+    [dictionary setValue:self.created forKey:@"created"];
+    [dictionary setValue:[NSNumber numberWithLong:self.amount] forKey:@"amount"];
+    [dictionary setValue:self.currency forKey:@"currency"];
+    
+    if (self.externalID) {
+        [dictionary setValue:self.externalID forKey:@"externalID"];
+    }
+    
+    if (self.comment) {
+        [dictionary setValue:self.comment forKey:@"comment"];
+    }
+    
+    return dictionary;
+}
+
 
 @end

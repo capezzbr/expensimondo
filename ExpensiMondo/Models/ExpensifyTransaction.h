@@ -24,4 +24,6 @@
                                                externalID:(nullable NSString *)externalID
                                                   comment:(nullable NSString *)comment;
 
+- (NSDictionary *)toDictionary;
+
 @end
