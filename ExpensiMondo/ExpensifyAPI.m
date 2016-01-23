@@ -34,8 +34,6 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
 - (id)init {
     if (self = [super init]) {
         [self loadConfiguration];
-        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     }
     return self;
 }
@@ -70,6 +68,7 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
   
     __weak ExpensifyAPI *this = self;
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     [manager POST:API_BASE_URL parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
         NSString *jsonBody = [this jsonFromDictionary:requestJobDescription];
         [formData appendPartWithFormData:[jsonBody dataUsingEncoding:NSUTF8StringEncoding] name:@"requestJobDescription"];
