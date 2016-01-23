@@ -26,13 +26,26 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
 
 - (id)init {
     if (self = [super init]) {
-
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+        manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
     }
     return self;
 }
 
+
 - (void)createTransaction:(nonnull ExpensifyTransaction *)transaction
              withCallback:(nonnull void (^)(NSError * _Nullable error))callback {
+    
+    [self createTransactions:@[transaction] withCallback:callback];
+}
+
+- (void)createTransactions:(nonnull NSArray<ExpensifyTransaction *> *)transactions
+              withCallback:(nonnull void (^)(NSError * _Nullable error))callback {
+    
+    NSMutableArray *transactionsArray = [[NSMutableArray alloc] initWithCapacity:transactions.count];
+    for (ExpensifyTransaction *transaction in transactions) {
+        [transactionsArray addObject:[transaction toDictionary]];
+    }
     
     NSDictionary *requestJobDescription =
     @{
@@ -44,32 +57,27 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
         @"inputSettings": @{
                 @"type": @"expenses",
                 @"employeeEmail": @"expensimondo@gmail.com",
-                @"transactionList": @[
-                        [transaction toDictionary]
-                ]
+                @"transactionList": transactionsArray
         }
     };
   
     __weak ExpensifyAPI *this = self;
-    
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObject:@"text/html"];
-    
-    [manager POST:API_BASE_URL parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    [manager POST:API_BASE_URL parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
         NSString *jsonBody = [this jsonFromDictionary:requestJobDescription];
         [formData appendPartWithFormData:[jsonBody dataUsingEncoding:NSUTF8StringEncoding] name:@"requestJobDescription"];
         
     } progress:^(NSProgress * _Nonnull uploadProgress) {
         NSLog(@"progress %@", uploadProgress);
         
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    } success:^(NSURLSessionDataTask * _Nonnull task, id _Nullable responseObject) {
         NSLog(@"Success %@", responseObject);
+        callback( nil );
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-
         NSLog(@"Error %@", error);
+        callback( error );
     }];
-    
 }
 
 -(NSString *)jsonFromDictionary:(NSDictionary *)dictionary {
@@ -81,8 +89,5 @@ static NSString *API_BASE_URL = @"https://integrations.expensify.com/Integration
     }
     return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
 }
-
-
-
 
 @end
