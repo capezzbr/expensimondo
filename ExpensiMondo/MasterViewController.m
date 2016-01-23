@@ -25,10 +25,16 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
-    if (![MondoAuthenticator isLoggedIn]){
-        [[MondoAuthenticator instance] login:self callback:^(NSError * error) {
-            
-        }];
+    BOOL oath = false;
+    
+    if (oath) {
+        if (![MondoAuthenticator isLoggedIn]){
+            [[MondoAuthenticator instance] login:self callback:^(NSError * error) {
+        
+            }];
+        }
+    }else{
+        [[MondoAPI instance] fetchToken];
     }
     
     [super viewWillAppear:animated];
