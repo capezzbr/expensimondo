@@ -28,7 +28,7 @@
     return transaction;
 }
 
-- (NSDictionary *)toDictionary {
+- (nonnull NSDictionary *)toDictionary {
     
     NSMutableDictionary *dictionary = [NSMutableDictionary new];
     [dictionary setValue:self.merchant forKey:@"merchant"];
