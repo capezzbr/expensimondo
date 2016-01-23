@@ -38,6 +38,14 @@
 		0A859C201C53900B0071C8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A859C1F1C53900B0071C8C0 /* Assets.xcassets */; };
 		0A859C231C53900B0071C8C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A859C211C53900B0071C8C0 /* LaunchScreen.storyboard */; };
 		0A859C5A1C53A0690071C8C0 /* MondoAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C591C53A0690071C8C0 /* MondoAuthenticator.swift */; };
+		2CC3F76D07F997C165ED90CF /* libPods-ExpensiMondo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D34875F9A8C8D28D6BFA64 /* libPods-ExpensiMondo.a */; };
+		8A75F8B31C53B709000392AB /* ExpensifyTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */; };
+		8A75F8B61C53B7AA000392AB /* ExpensifyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B51C53B7AA000392AB /* ExpensifyAPI.m */; };
+		8A75F8B81C53B9F8000392AB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8A75F8B71C53B9F8000392AB /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0280F9589AC587584956848E /* Pods-ExpensiMondo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpensiMondo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExpensiMondo/Pods-ExpensiMondo.debug.xcconfig"; sourceTree = "<group>"; };
 		0A859C5D1C53B2E10071C8C0 /* MondoTransactionFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A859C5C1C53B2E10071C8C0 /* MondoTransactionFetcher.swift */; };
 		8A75F8B31C53B709000392AB /* ExpensifyTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B21C53B709000392AB /* ExpensifyTransaction.m */; };
 		8A75F8B61C53B7AA000392AB /* ExpensifyAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8B51C53B7AA000392AB /* ExpensifyAPI.m */; };
@@ -93,6 +101,8 @@
 		8A75F8B51C53B7AA000392AB /* ExpensifyAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpensifyAPI.m; sourceTree = "<group>"; };
 		8A75F8B71C53B9F8000392AB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B714D9ED950A7D99D722EC66 /* Pods-ExpensiMondo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpensiMondo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExpensiMondo/Pods-ExpensiMondo.release.xcconfig"; sourceTree = "<group>"; };
+		C6D34875F9A8C8D28D6BFA64 /* libPods-ExpensiMondo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExpensiMondo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A859C5C1C53B2E10071C8C0 /* MondoTransactionFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MondoTransactionFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -362,6 +372,14 @@
 				0A211EA91C53BAF40028CD2C /* OAuth2CodeGrantBasicAuth.swift in Sources */,
 				0A859C5D1C53B2E10071C8C0 /* MondoTransactionFetcher.swift in Sources */,
 				8A75F8B31C53B709000392AB /* ExpensifyTransaction.m in Sources */,
+				0A859C4D1C53A0370071C8C0 /* OAuth2CodeGrantBasicAuth.swift in Sources */,
+				0A859C581C53A0370071C8C0 /* KeychainService.swift in Sources */,
+				0A859C531C53A0370071C8C0 /* ArchiveKey.swift in Sources */,
+				0A859C4A1C53A0370071C8C0 /* OAuth2Base.swift in Sources */,
+				0A211EB31C53BAF40028CD2C /* KeychainQuery.swift in Sources */,
+				0A211EA81C53BAF40028CD2C /* OAuth2CodeGrant.swift in Sources */,
+				0A211EA91C53BAF40028CD2C /* OAuth2CodeGrantBasicAuth.swift in Sources */,
+				0A859C5D1C53B2E10071C8C0 /* MondoTransactionFetcher.swift in Sources */,
 				0A859C1B1C53900B0071C8C0 /* DetailViewController.m in Sources */,
 				0A211EA41C53BAF40028CD2C /* OAuth2WebViewController.swift in Sources */,
 				0A211EA71C53BAF40028CD2C /* OAuth2ClientCredentials.swift in Sources */,
@@ -383,6 +401,11 @@
 				0A211EA61C53BAF40028CD2C /* OAuth2Base.swift in Sources */,
 				0A211EAD1C53BAF40028CD2C /* OAuth2PasswordGrant.swift in Sources */,
 				8A75F8B61C53B7AA000392AB /* ExpensifyAPI.m in Sources */,
+				0A211EB01C53BAF40028CD2C /* GenericKey.swift in Sources */,
+				0A211EAE1C53BAF40028CD2C /* OAuth2Request.swift in Sources */,
+				0A211EAA1C53BAF40028CD2C /* OAuth2CodeGrantFacebook.swift in Sources */,
+				0A211EA61C53BAF40028CD2C /* OAuth2Base.swift in Sources */,
+				0A211EAD1C53BAF40028CD2C /* OAuth2PasswordGrant.swift in Sources */,
 				0A859C0F1C53900B0071C8C0 /* main.m in Sources */,
 				0A859C151C53900B0071C8C0 /* ExpensiMondo.xcdatamodeld in Sources */,
 			);

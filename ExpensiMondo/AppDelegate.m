@@ -10,6 +10,9 @@
 #import "DetailViewController.h"
 #import "MasterViewController.h"
 
+#import "ExpensifyAPI.h"
+#import "ExpensifyTransaction.h"
+
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
 @end
@@ -24,6 +27,18 @@
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
 
+    // Create test transaction
+    ExpensifyTransaction *transaction = [ExpensifyTransaction transactionWithMerchant:@"Test"
+                                                                              created:@"2015-01-10"
+                                                                               amount:100
+                                                                             currency:@"USD"
+                                                                           externalID:@"test"
+                                                                              comment:@"comment"];
+    
+    [[ExpensifyAPI sharedManager] createTransaction:transaction withCallback:^(NSError * _Nullable error) {
+        
+    }];
+    
     UINavigationController *masterNavigationController = splitViewController.viewControllers[0];
     MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;

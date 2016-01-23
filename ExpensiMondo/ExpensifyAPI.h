@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ExpensifyTransaction.h"
 
 @interface ExpensifyAPI : NSObject
+
++ (nonnull id)sharedManager;
+- (void)createTransaction:(nonnull ExpensifyTransaction *)transaction
+             withCallback:(nonnull void (^)(NSError * _Nullable error))callback;
 
 @end
