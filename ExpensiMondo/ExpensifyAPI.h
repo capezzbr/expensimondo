@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ExpensifyTransaction.h"
 
 @interface ExpensifyAPI : NSObject
+
+- (void)createTransaction:(nonnull ExpensifyTransaction *)transaction;
 
 @end
