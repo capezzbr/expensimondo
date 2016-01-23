@@ -15,6 +15,7 @@
 		0A859C1E1C53900B0071C8C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A859C1C1C53900B0071C8C0 /* Main.storyboard */; };
 		0A859C201C53900B0071C8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A859C1F1C53900B0071C8C0 /* Assets.xcassets */; };
 		0A859C231C53900B0071C8C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A859C211C53900B0071C8C0 /* LaunchScreen.storyboard */; };
+		8A75F8AF1C53A836000392AB /* ExpensifyTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A75F8AE1C53A836000392AB /* ExpensifyTransaction.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		0A859C1F1C53900B0071C8C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A859C221C53900B0071C8C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A859C241C53900B0071C8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A75F8AD1C53A836000392AB /* ExpensifyTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpensifyTransaction.h; path = Models/ExpensifyTransaction.h; sourceTree = "<group>"; };
+		8A75F8AE1C53A836000392AB /* ExpensifyTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpensifyTransaction.m; path = Models/ExpensifyTransaction.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 		0A859C0C1C53900B0071C8C0 /* ExpensiMondo */ = {
 			isa = PBXGroup;
 			children = (
+				8A75F8AC1C53A7E0000392AB /* Models */,
 				0A859C101C53900B0071C8C0 /* AppDelegate.h */,
 				0A859C111C53900B0071C8C0 /* AppDelegate.m */,
 				0A859C161C53900B0071C8C0 /* MasterViewController.h */,
@@ -85,6 +89,15 @@
 				0A859C0E1C53900B0071C8C0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A75F8AC1C53A7E0000392AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A75F8AD1C53A836000392AB /* ExpensifyTransaction.h */,
+				8A75F8AE1C53A836000392AB /* ExpensifyTransaction.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,6 +172,7 @@
 			files = (
 				0A859C1B1C53900B0071C8C0 /* DetailViewController.m in Sources */,
 				0A859C181C53900B0071C8C0 /* MasterViewController.m in Sources */,
+				8A75F8AF1C53A836000392AB /* ExpensifyTransaction.m in Sources */,
 				0A859C121C53900B0071C8C0 /* AppDelegate.m in Sources */,
 				0A859C0F1C53900B0071C8C0 /* main.m in Sources */,
 				0A859C151C53900B0071C8C0 /* ExpensiMondo.xcdatamodeld in Sources */,
@@ -310,6 +324,7 @@
 				0A859C291C53900B0071C8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
