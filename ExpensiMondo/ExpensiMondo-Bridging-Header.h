@@ -9,5 +9,6 @@
 #ifndef ExpensiMondo_Bridging_Header_h
 #define ExpensiMondo_Bridging_Header_h
 
+#import <AFNetworking/AFNetworking.h>
 
 #endif /* ExpensiMondo_Bridging_Header_h */

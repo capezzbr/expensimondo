@@ -18,8 +18,8 @@ public class MondoAuthenticator : NSObject {
     var callback: LoginCallback = {_ in}
     
     override init() {
-        let settings = ["client_id":"oauthclient_000094RpteIGEnsZRmJrtJ",
-                        "client_secret":"UuoNeRGv470bs0sCnpdWB7OqpCdcXbumna8OrISugyCjutS6zUqEqJy72cyO8hgwXkg+utcfBBdnFn6HAHde",
+        let settings = ["client_id":"oauthclient_000094SAgQehjKdTolZG5p",
+                        "client_secret":"pmO82ayM6W7rF1jRZndD5gfZJxIXyNY6k9+f7VJSOgEcaJSemthlIZLycCrz9L9A8aAXCD68y2u9UBk1r8Da",
                         "token_uri":"https://api.getmondo.co.uk/oauth2/token",
                         "authorize_uri":"https://auth.getmondo.co.uk",
                         "redirect_uris": ["expensimondo://oauth/callback"],

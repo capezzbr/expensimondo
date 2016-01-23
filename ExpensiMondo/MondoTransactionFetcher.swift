@@ -14,6 +14,8 @@ import Foundation
 
 class MondoTransactionFetcher: NSObject {
     
+    
+    
     func fetchTransactions(){
         
     }

@@ -20,26 +20,33 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    
-    BOOL oath = false;
-    
+    [self authenticate];
+
+    [self getTransactions];
+    [super viewWillAppear:animated];
+}
+
+
+- (void)authenticate{
+    BOOL oath = true;
     if (oath) {
         if (![MondoAuthenticator isLoggedIn]){
             [[MondoAuthenticator instance] login:self callback:^(NSError * error) {
-        
+                
             }];
         }
     }else{
         [[MondoAPI instance] fetchToken];
     }
-    
-    [super viewWillAppear:animated];
 }
 
+
+- (void)getTransactions{
+    [[MondoAPI instance] fetchTransactions];
+}
 
 
 - (void)didReceiveMemoryWarning {
